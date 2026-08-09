@@ -60,7 +60,7 @@ oc adm top pod -A --containers
 
 oc logs pod/alertmanager-main-0 -n openshift-monitoring 
 
-
+oc debug node/crc
 
 
 
