@@ -78,7 +78,7 @@ random
 systemctl status kubelet
 
 
-
+chroot /host
 
 
 
