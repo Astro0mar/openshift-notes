@@ -26,6 +26,12 @@ oc whoami show-console
 
 oc describe pod test-pod
 
+oc run test --image nginx
+
+oc get pods
+
+
+
 
 
 
