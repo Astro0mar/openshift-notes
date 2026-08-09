@@ -58,6 +58,7 @@ oc adm top pod -A --sum --sort-by cpu
 
 oc adm top pod -A --containers
 
+oc logs pod/alertmanager-main-0 -n openshift-monitoring 
 
 
 
