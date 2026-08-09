@@ -48,7 +48,7 @@ oc api-resources
 
 oc api-resources --namespaced==true --api-group ""
 
-
+oc get projects 
 
 
 
