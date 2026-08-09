@@ -50,7 +50,7 @@ oc api-resources --namespaced==true --api-group ""
 
 oc get projects 
 
-
+oc adm top
 
 
 
