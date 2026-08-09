@@ -52,7 +52,7 @@ oc get projects
 
 oc adm top
 
-
+oc adm top pod -A
 
 
 
