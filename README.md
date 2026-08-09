@@ -56,7 +56,7 @@ oc adm top pod -A
 
 oc adm top pod -A --sum --sort-by cpu
 
-
+oc adm top pod -A --containers
 
 
 
