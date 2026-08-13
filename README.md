@@ -84,6 +84,8 @@ MYSQL_USER=developer \
 MYSQL_PASSWORD=developer \
 MYSQL_DATABASE=sampledb
 
+oc set data secret/demo-secret -n demo \
+--from-file /tmp/demo/root_password
 
 
 
