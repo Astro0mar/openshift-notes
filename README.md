@@ -118,6 +118,8 @@ oc rsh: Start a remote shell within a specified container.
 
 oc get endpointslices
 
+oc extract secret/demo-secret -n demo \
+--to /tmp/demo --confirm
 
 
 
