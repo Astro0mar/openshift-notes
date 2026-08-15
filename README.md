@@ -155,6 +155,9 @@ oc set volumes deployment/web-pod \
 oc get events \
 --field-selector reason="FailedScheduling"
 
+oc image info --filter-by-os linux/amd64 \
+registry.redhat.io/rhel9/nginx-124:9.8
+
 
 
 random
