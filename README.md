@@ -174,6 +174,13 @@ crictl inspect --output go-template \
 
 
 
+oc get pod $POD_NAME -o json | \
+jq .spec.volumes[0].persistentVolumeClaim.claimName
+
+
+
+
+
 .............................................................................................
 
 Store the IP address of the MariaDB pod as a variable for use in the next substep, and print the DB_IP variable value.
