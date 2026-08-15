@@ -125,6 +125,14 @@ oc extract secret/demo-secret -n demo \
 
 
 
+oc set volumes deployment/example-application \
+--add --name example-pv-storage --type pvc \
+--claim-class nfs-storage --claim-mode rwo --claim-size 15Gi \
+--mount-path /var/lib/example-app --claim-name mypvc
+
+
+
+
 
 
 random
