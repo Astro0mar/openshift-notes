@@ -143,6 +143,17 @@ registry.lab.example.com:8443/redhattraining/do180-dbinit:v2 \
 
 
 
+
+
+oc set volumes deployment/web-pod \
+--add --name nfs-volume \
+--claim-name nfs-pvc \
+--mount-path /var/www/html
+
+
+
+
+
 random
 ....................................................................
 
