@@ -152,6 +152,9 @@ oc set volumes deployment/web-pod \
 
 
 
+oc get events \
+--field-selector reason="FailedScheduling"
+
 
 
 random
