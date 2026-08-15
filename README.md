@@ -94,6 +94,10 @@ oc patch pvc/mypvc \
 -p '{"spec": {"resources": {"requests": {"storage": "30Gi"}}}}'
 
 
+oc rollout undo deployment/myapp2
+
+oc rollout status deployment/myapp2
+
 
 
 troubleshooting 
