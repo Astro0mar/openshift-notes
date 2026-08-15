@@ -99,6 +99,8 @@ oc rollout undo deployment/myapp2
 oc rollout status deployment/myapp2
 
 
+oc get istag -n openshift | grep postgresql
+
 
 troubleshooting 
 ..........................................................................
