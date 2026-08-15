@@ -135,6 +135,12 @@ oc set volumes deployment/example-application \
 
 
 
+oc run query-db -it --rm --image \
+registry.lab.example.com:8443/redhattraining/do180-dbinit:v2 \
+--restart Never \
+-- /bin/bash -c "mariadb -uuser1 -predhat123 --protocol tcp \
+-h db-pod -P3306 items -e 'select * from Item;'"
+
 
 
 random
