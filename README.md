@@ -89,7 +89,9 @@ oc set data secret/demo-secret -n demo \
 
 oc get storageclass
 
-
+oc patch pvc/mypvc \
+--type merge \
+-p '{"spec": {"resources": {"requests": {"storage": "30Gi"}}}}'
 
 
 
