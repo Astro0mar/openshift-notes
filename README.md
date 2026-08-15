@@ -87,7 +87,7 @@ MYSQL_DATABASE=sampledb
 oc set data secret/demo-secret -n demo \
 --from-file /tmp/demo/root_password
 
-
+oc get storageclass
 
 
 
