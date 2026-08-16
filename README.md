@@ -164,6 +164,54 @@ oc get events \
 oc image info --filter-by-os linux/amd64 \
 registry.redhat.io/rhel9/nginx-124:9.8
 
+oc set image-lookup keycloak
+
+oc describe is keycloak
+
+oc set image-lookup
+
+oc set image-lookup keycloak --enabled=false
+
+
+oc create deployment mykeycloak --image keycloak:25.0
+
+oc create job NAME --image IMAGE-STREAM-TAG -- COMMAND
+
+
+oc run NAME --image IMAGE-STREAM-TAG
+
+
+oc import-image keycloak:26.6 \
+--from quay.io/keycloak/keycloak:26.6 --confirm
+
+oc get scc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 random
