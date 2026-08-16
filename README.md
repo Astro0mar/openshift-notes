@@ -186,7 +186,7 @@ oc import-image keycloak:26.6 \
 
 oc get scc
 
-
+oc create -R -f ~/my-app
 
 
 
