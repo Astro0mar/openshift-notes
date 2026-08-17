@@ -189,7 +189,7 @@ oc get scc
 oc create -R -f ~/my-app
 
 
-
+oc get pipelines
 
 
 
