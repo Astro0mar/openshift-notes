@@ -191,7 +191,9 @@ oc create -R -f ~/my-app
 
 oc get pipelines
 
-
+ldapsearch -D "cn=Directory Manager" \
+  -w redhatocp -H ldaps://rhds.ocp4.example.com \
+  -b "ou=people,dc=example,dc=com"
 
 
 
